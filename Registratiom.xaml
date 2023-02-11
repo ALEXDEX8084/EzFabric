@@ -2,20 +2,37 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EzFabric.Registratiom"
-             Title="Registration" BackgroundColor="#595959">
+             Title="EZ FABRIC" BackgroundColor="#595959">
     <VerticalStackLayout>
         <StackLayout>
+            <StackLayout VerticalOptions="Center">
+                <Label Text="Registration" Margin="100,0,0,0" TextColor="{StaticResource Key=textColor}" FontSize="Large"/>
+                <Label Text="Fill in the info to complete your registration" Margin="40,0,0,0" TextColor="{StaticResource Key=textColor}"/>
+            </StackLayout>
+            <StackLayout>
+                <Label/>
             <Label/>
-            <Label/>
-            <HorizontalStackLayout Margin="{StaticResource Key=margin1}">
-                <RadioButton Content="Buyer" TextColor="{StaticResource Key=textColor}"/>
-                <RadioButton Content="Sales Rep." TextColor="{StaticResource Key=textColor}"/>
-                <RadioButton Content="Supplier" TextColor="{StaticResource Key=textColor}"/>
-            </HorizontalStackLayout>
-            <Editor Placeholder = "Your name" BackgroundColor="{StaticResource Key=backColor3}" />
-            <Editor Placeholder = "Email" BackgroundColor="{StaticResource Key=backColor3}" />
-            <Editor Placeholder = "Password" BackgroundColor="{StaticResource Key=backColor3}"/>
-            <Editor Placeholder = "Repeat Password" BackgroundColor="{StaticResource Key=backColor3}" />
+                <VerticalStackLayout Margin="{StaticResource Key=margin1}">
+                    <HorizontalStackLayout Margin="25,0,0,0">
+                        <RadioButton  TextColor="{StaticResource Key=textColor}"/>
+                        <RadioButton  TextColor="{StaticResource Key=textColor}"/>
+                        <RadioButton  TextColor="{StaticResource Key=textColor}"/>
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="20,0,0,0">
+                        <Label Text="Buyer" Margin="0,0,0,0" TextColor="{StaticResource Key=textColor}"/>
+                        <Label Text="Sales rep." Margin="70,0,0,0" TextColor="{StaticResource Key=textColor}"/>
+                        <Label Text="Supplier" Margin="55,0,0,0" TextColor="{StaticResource Key=textColor}"/>
+                    </HorizontalStackLayout>
+                </VerticalStackLayout>
+                <Editor Placeholder = "Your name" BackgroundColor="{StaticResource Key=backColor3}" Margin="20,0,20,0"/>
+                <Editor Placeholder = "Email" BackgroundColor="{StaticResource Key=backColor3}" Margin="20,0,20,0"/>
+                <Editor Placeholder = "Password" BackgroundColor="{StaticResource Key=backColor3}" Margin="20,0,20,0"/>
+                <Editor Placeholder = "Repeat Password" BackgroundColor="{StaticResource Key=backColor3}" Margin="20,0,20,0" />
+            </StackLayout>
+            <StackLayout>
+                <Button x:Name="BtnReg" Text="Register" BackgroundColor="{StaticResource Key=backColor2}" Margin="{StaticResource Key=margin1}" TextColor="{StaticResource Key=textColor}"
+                    />
+            </StackLayout>
         </StackLayout>
     </VerticalStackLayout>
 </ContentPage>
