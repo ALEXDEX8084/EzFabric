@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EzFabric.MainPage">
+    <StackLayout BackgroundColor="#595959">
+        <StackLayout>
+            <Editor Placeholder = "Username" BackgroundColor="{StaticResource Key=backColor3}" Margin="20, 50, 20, 0"/>
+            <Editor Placeholder = "Password" BackgroundColor="{StaticResource Key=backColor3}" Margin="20, 0, 20, 0"/>
+            <Button Text="Login" BackgroundColor="{StaticResource Key=backColor1}" Margin="{StaticResource Key=margin1}" TextColor="{StaticResource Key=textColor}"/>
+        </StackLayout>
+        <StackLayout>
+
+            <Label Text="      ---------------------------- or ----------------------------" Margin="{StaticResource Key=margin2}" TextColor="{StaticResource Key=textColor}"/>
+        </StackLayout>
+        <StackLayout>
+            <Button x:Name="BtnReg" Text="Register" BackgroundColor="{StaticResource Key=backColor2}" Margin="{StaticResource Key=margin1}" TextColor="{StaticResource Key=textColor}"
+                    Clicked="BtnReg_Clicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

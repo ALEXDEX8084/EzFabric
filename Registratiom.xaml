@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EzFabric.Registratiom"
+             Title="Registration" BackgroundColor="#595959">
+    <VerticalStackLayout>
+        <StackLayout>
+            <Label/>
+            <Label/>
+            <HorizontalStackLayout Margin="{StaticResource Key=margin1}">
+                <RadioButton Content="Buyer" TextColor="{StaticResource Key=textColor}"/>
+                <RadioButton Content="Sales Rep." TextColor="{StaticResource Key=textColor}"/>
+                <RadioButton Content="Supplier" TextColor="{StaticResource Key=textColor}"/>
+            </HorizontalStackLayout>
+            <Editor Placeholder = "Your name" BackgroundColor="{StaticResource Key=backColor3}" />
+            <Editor Placeholder = "Email" BackgroundColor="{StaticResource Key=backColor3}" />
+            <Editor Placeholder = "Password" BackgroundColor="{StaticResource Key=backColor3}"/>
+            <Editor Placeholder = "Repeat Password" BackgroundColor="{StaticResource Key=backColor3}" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
